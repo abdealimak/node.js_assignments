@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
 
         res.end(`
             <h1>About Me</h1>
-            <p>My name is John Doe.</p>
+            <p>My name is Abdeali Makda.</p>
 
             <a href="/">Home</a>
             <a href="/about">About Me</a>
@@ -61,8 +61,8 @@ const server = http.createServer((req, res) => {
 
         res.end(`
             <h1>Contact Details</h1>
-            <p>Name: John Doe</p>
-            <p>Email: john@example.com</p>
+            <p>Name: Abdeali Makda</p>
+            <p>Email: abdealimac@gmail.com</p>
 
             <a href="/">Home</a>
             <a href="/about">About Me</a>

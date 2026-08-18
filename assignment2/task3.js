@@ -6,9 +6,9 @@ const server = http.createServer((req, res) => {
 
         const student = {
             id: 101,
-            name: "John",
-            course: "BCA",
-            semester: 4,
+            name: "Abdeali",
+            course: "Btech",
+            semester: 3,
             city: "Mumbai"
         };
 
