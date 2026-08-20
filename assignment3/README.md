@@ -60,15 +60,7 @@ I am learning backend development
 
 ### Output Screenshot
 
-### Output Screenshot
-
 ![Task 1 Output](images/app-output.png)
-
-<br>
-
-**Screenshot:**
-
-<br><br><br><br><br><br>
 
 ---
 
@@ -111,15 +103,7 @@ Goal: Full Stack Developer
 
 ### Output Screenshot
 
-### Output Screenshot
-
 ![Task 2 Output](images/introduction-output.png)
-
-<br>
-
-**Screenshot:**
-
-<br><br><br><br><br><br>
 
 ---
 
