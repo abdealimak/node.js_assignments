@@ -62,7 +62,7 @@ I am learning backend development
 
 ### Output Screenshot
 
-![Task 1 Output](images/app-output)
+![Task 1 Output](images/app-output.png)
 
 <br>
 
@@ -113,7 +113,7 @@ Goal: Full Stack Developer
 
 ### Output Screenshot
 
-![Task 2 Output](images/introduction-output)
+![Task 2 Output](images/introduction-output.png)
 
 <br>
 
