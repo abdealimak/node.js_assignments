@@ -97,7 +97,7 @@ The program uses `fs.appendFile()` to add additional information to the existing
 The following information is added:
 
 * Experience: 1 Year
-* City: Kolkata
+* City: Mumbai
 
 ### Output
 
