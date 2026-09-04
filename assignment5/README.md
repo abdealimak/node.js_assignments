@@ -24,7 +24,6 @@ assignment5/
 │
 ├── package.json
 ├── package-lock.json
-└── .gitignore
 ```
 
 ## Installation
