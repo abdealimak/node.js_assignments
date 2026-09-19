@@ -1,267 +1,476 @@
-# Assignment 7 — Express.js Routing
+# Assignment 7 --- Route Parameters & Query Parameters
 
-This assignment demonstrates routing in Express.js using **Route Parameters** and **Query Parameters**.
+## Overview
 
-## Project Structure
+This assignment demonstrates dynamic routing in Express.js using **Route
+Parameters** and **Query Parameters**.
 
-```text
+The assignment is divided into three independent tasks:
+
+-   **Task 1:** Route Parameters
+-   **Task 2:** Query Parameters
+-   **Task 3:** Route Parameters + Query Parameters
+
+Each task is maintained in a separate folder with its own Express.js
+setup.
+
+------------------------------------------------------------------------
+
+## Folder Structure
+
+``` text
 assignment7/
 │
 ├── task1/
+│   ├── node_modules/
+│   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
 │
 ├── task2/
+│   ├── node_modules/
+│   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
 │
 ├── task3/
+│   ├── node_modules/
+│   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
 │
 └── README.md
 ```
 
-## Task 1 — Route Parameters
+> `node_modules` is required locally to run the applications but
+> normally should not be uploaded to GitHub. The `package.json` and
+> `package-lock.json` files are sufficient to reinstall the
+> dependencies.
 
-### Objective
+------------------------------------------------------------------------
 
-Implement dynamic routing using Route Parameters in Express.js.
+# Task 1 --- Route Parameters
 
-### Route
+## Objective
 
-```text
+Implement dynamic routing using **Route Parameters** in Express.js.
+
+## Requirements
+
+-   Create the route `/student/:id`.
+-   Extract the student ID using route parameters.
+-   Display the student ID in the browser.
+-   The application should work for different student IDs dynamically.
+
+## Route
+
+``` text
 /student/:id
 ```
 
-The student ID is retrieved using:
+Here, `:id` is a dynamic route parameter.
 
-```js
+## Concept Used
+
+### Route Parameters
+
+Route parameters are values embedded directly in the URL path.
+
+Example:
+
+``` text
+/student/101
+```
+
+The value `101` is available through:
+
+``` js
 req.params.id
 ```
 
-### Example
+## Expected Output
 
-URL:
+### URL
 
-```text
+``` text
 http://localhost:3000/student/101
 ```
 
-Output:
+### Browser
 
-```text
+``` text
 Student ID: 101
 ```
 
-Another example:
+### Another Example
 
-```text
+URL:
+
+``` text
 http://localhost:3000/student/205
 ```
 
-Output:
+Browser:
 
-```text
+``` text
 Student ID: 205
 ```
 
-### Concept Used
+## Concepts Covered
 
-* Dynamic Routes
-* Route Parameters
-* `req.params`
-* Express Routing
+-   Express.js routing
+-   Dynamic routes
+-   Route parameters
+-   `req.params`
+-   Accessing a specific route parameter
+-   Sending a response using `res.send()`
 
----
+------------------------------------------------------------------------
 
-## Task 2 — Query Parameters
+# Task 2 --- Query Parameters
 
-### Objective
+## Objective
 
-Retrieve and display data using Query Parameters.
+Retrieve and display data using **Query Parameters**.
 
-### Route
+## Requirements
 
-```text
+-   Create the route `/search`.
+-   Accept the following query parameters:
+    -   `name`
+    -   `course`
+-   Display both values in the browser.
+-   If no query parameters are provided, display:
+    -   `No search data provided.`
+
+## Route
+
+``` text
 /search
 ```
 
-The application accepts:
+## Concept Used
 
-* `name`
-* `course`
+### Query Parameters
 
-The values are retrieved using:
+Query parameters are values provided after `?` in a URL.
 
-```js
+Example:
+
+``` text
+/search?name=Ricky&course=Node.js
+```
+
+The values can be accessed using:
+
+``` js
 req.query.name
 req.query.course
 ```
 
-### Example
+## Expected Output
 
-URL:
+### URL
 
-```text
+``` text
 http://localhost:3000/search?name=Ricky&course=Node.js
 ```
 
-Output:
+### Browser
 
-```text
+``` text
 Name: Ricky
 Course: Node.js
 ```
 
-If no query parameters are provided:
+### Without Query Parameters
 
-```text
+URL:
+
+``` text
 http://localhost:3000/search
 ```
 
-Output:
+Browser:
 
-```text
+``` text
 No search data provided.
 ```
 
-### Concept Used
+## Concepts Covered
 
-* Query Parameters
-* `req.query`
-* Express Routing
+-   Express.js routing
+-   Query parameters
+-   `req.query`
+-   Reading multiple query parameters
+-   Conditional checking
+-   `res.send()`
+-   Handling requests when query data is missing
 
----
+------------------------------------------------------------------------
 
-## Task 3 — Route Parameters & Query Parameters
+# Task 3 --- Route Parameters + Query Parameters
 
-### Objective
+## Objective
 
-Build a dynamic route using both Route Parameters and Query Parameters.
+Build a dynamic route that uses both **Route Parameters** and **Query
+Parameters**.
 
-### Route
+## Requirements
 
-```text
+-   Create the route `/student/:id`.
+-   Retrieve the student ID using route parameters.
+-   Accept the following query parameters:
+    -   `name`
+    -   `course`
+-   Display all student details in the browser.
+
+## Route
+
+``` text
 /student/:id
 ```
 
-The application uses:
+## Example URL
 
-```js
+``` text
+http://localhost:3000/student/101?name=John&course=FullStack
+```
+
+This URL contains both:
+
+-   Route parameter → `101`
+-   Query parameters → `name=John` and `course=FullStack`
+
+## How the Parameters Are Retrieved
+
+### Route Parameter
+
+``` js
 req.params.id
 ```
 
-to retrieve the student ID and:
+### Query Parameters
 
-```js
+``` js
 req.query.name
 req.query.course
 ```
 
-to retrieve the student's name and course.
+## Expected Output
 
-### Example
+### URL
 
-URL:
-
-```text
+``` text
 http://localhost:3000/student/101?name=John&course=FullStack
 ```
 
-Output:
+### Browser
 
-```text
+``` text
 Student ID: 101
 Name: John
 Course: FullStack
 ```
 
-### Concepts Used
+## Concepts Covered
 
-* Route Parameters
-* Query Parameters
-* `req.params`
-* `req.query`
-* Dynamic Routing
-* Express.js Routing
+-   Express.js routing
+-   Dynamic routing
+-   Route parameters
+-   `req.params`
+-   Query parameters
+-   `req.query`
+-   Using route and query parameters together
+-   Sending dynamic responses with `res.send()`
 
----
+------------------------------------------------------------------------
 
-## How to Run
+# Installation
 
-Each task is a separate Express.js project.
+Each task is an independent Express.js application.
 
-### Task 1
+If dependencies have not already been installed, open a terminal inside
+the respective task folder and run:
 
-```bash
+``` bash
+npm install
+```
+
+If setting up a task from scratch:
+
+``` bash
+npm init -y
+npm install express
+```
+
+------------------------------------------------------------------------
+
+# Running the Applications
+
+Only one task should be running on port `3000` at a time.
+
+## Task 1
+
+``` bash
 cd task1
 node server.js
 ```
 
-Then open:
+Open:
 
-```text
+``` text
 http://localhost:3000/student/101
 ```
 
-### Task 2
+------------------------------------------------------------------------
 
-Stop the previous server using:
+## Task 2
 
-```text
+Stop Task 1 using:
+
+``` text
 Ctrl + C
 ```
 
 Then:
 
-```bash
-cd task2
+``` bash
+cd ../task2
 node server.js
 ```
 
 Open:
 
-```text
+``` text
 http://localhost:3000/search?name=Ricky&course=Node.js
 ```
 
-### Task 3
+------------------------------------------------------------------------
 
-Stop the previous server using:
+## Task 3
 
-```text
+Stop Task 2 using:
+
+``` text
 Ctrl + C
 ```
 
 Then:
 
-```bash
-cd task3
+``` bash
+cd ../task3
 node server.js
 ```
 
 Open:
 
-```text
+``` text
 http://localhost:3000/student/101?name=John&course=FullStack
 ```
 
-## Requirements
+------------------------------------------------------------------------
 
-* Node.js
-* Express.js
+# Summary of Concepts
 
-Express is installed separately inside each task folder using:
+  ------------------------------------------------------------------------------------------
+  Task              Route                                Main Concept      Express API
+  ----------------- ------------------------------------ ----------------- -----------------
+  Task 1            `/student/:id`                       Route Parameters  `req.params`
 
-```bash
-npm install express
+  Task 2            `/search`                            Query Parameters  `req.query`
+
+  Task 3            `/student/:id?name=...&course=...`   Route + Query     `req.params` +
+                                                         Parameters        `req.query`
+  ------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# Key Difference: Route Parameters vs Query Parameters
+
+## Route Parameter
+
+``` text
+/student/101
 ```
 
-## Assignment Topics
+The `101` is part of the URL path.
 
-| Task   | Topic            | Express Feature            |
-| ------ | ---------------- | -------------------------- |
-| Task 1 | Route Parameters | `req.params`               |
-| Task 2 | Query Parameters | `req.query`                |
-| Task 3 | Both Parameters  | `req.params` + `req.query` |
+It is accessed using:
+
+``` js
+req.params.id
+```
+
+## Query Parameter
+
+``` text
+/search?name=Ricky&course=Node.js
+```
+
+The values appear after `?`.
+
+They are accessed using:
+
+``` js
+req.query.name
+req.query.course
+```
+
+## Using Both
+
+``` text
+/student/101?name=John&course=FullStack
+```
+
+Here:
+
+``` text
+101
+```
+
+is the route parameter, while:
+
+``` text
+name=John
+course=FullStack
+```
+
+are query parameters.
+
+------------------------------------------------------------------------
+
+# Assignment Rubric
+
+The implementation addresses the provided 10-mark rubric:
+
+  Criteria                                                    Marks
+  -------------------------------------------------- --------------
+  Correct implementation of dynamic routes/queries                3
+  Proper use of `req.params` and/or `req.query`                   2
+  Correct functionality and expected output                       2
+  Code quality, formatting, and readability                       2
+  Successful execution without errors                             1
+  **Total**                                            **10 Marks**
+
+------------------------------------------------------------------------
+
+# Technologies Used
+
+-   **Node.js**
+-   **Express.js**
+-   JavaScript
+-   npm
+
+------------------------------------------------------------------------
+
+# Conclusion
+
+This assignment demonstrates how Express.js handles dynamic data through
+URL paths and query strings.
+
+The three tasks progressively demonstrate:
+
+1.  Using `req.params` for route parameters.
+2.  Using `req.query` for query parameters.
+3.  Combining `req.params` and `req.query` in a single route.
