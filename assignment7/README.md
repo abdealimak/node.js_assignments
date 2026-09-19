@@ -365,21 +365,6 @@ http://localhost:3000/student/101?name=John&course=FullStack
 
 ------------------------------------------------------------------------
 
-# Summary of Concepts
-
-  ------------------------------------------------------------------------------------------
-  Task              Route                                Main Concept      Express API
-  ----------------- ------------------------------------ ----------------- -----------------
-  Task 1            `/student/:id`                       Route Parameters  `req.params`
-
-  Task 2            `/search`                            Query Parameters  `req.query`
-
-  Task 3            `/student/:id?name=...&course=...`   Route + Query     `req.params` +
-                                                         Parameters        `req.query`
-  ------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
 # Key Difference: Route Parameters vs Query Parameters
 
 ## Route Parameter
