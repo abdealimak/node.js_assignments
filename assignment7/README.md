@@ -419,21 +419,6 @@ are query parameters.
 
 ------------------------------------------------------------------------
 
-# Assignment Rubric
-
-The implementation addresses the provided 10-mark rubric:
-
-  Criteria                                                    Marks
-  -------------------------------------------------- --------------
-  Correct implementation of dynamic routes/queries                3
-  Proper use of `req.params` and/or `req.query`                   2
-  Correct functionality and expected output                       2
-  Code quality, formatting, and readability                       2
-  Successful execution without errors                             1
-  **Total**                                            **10 Marks**
-
-------------------------------------------------------------------------
-
 # Technologies Used
 
 -   **Node.js**
