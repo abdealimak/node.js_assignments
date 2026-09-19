@@ -1,1 +1,1 @@
-# A repository containing my learning and practice work while learning Node.js and backend development.
+# A repository containing my learning and practice work while learning Node.js, Express.js and Backend Development.
