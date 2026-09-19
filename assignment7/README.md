@@ -22,19 +22,16 @@ setup.
 assignment7/
 │
 ├── task1/
-│   ├── node_modules/
 │   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
 │
 ├── task2/
-│   ├── node_modules/
 │   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
 │
 ├── task3/
-│   ├── node_modules/
 │   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
@@ -42,10 +39,7 @@ assignment7/
 └── README.md
 ```
 
-> `node_modules` is required locally to run the applications but
-> normally should not be uploaded to GitHub. The `package.json` and
-> `package-lock.json` files are sufficient to reinstall the
-> dependencies.
+> The `package.json` and `package-lock.json` files are sufficient to reinstall the dependencies.
 
 ------------------------------------------------------------------------
 
