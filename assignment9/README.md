@@ -73,7 +73,7 @@ MongoDB connected successfully
 
 Terminal output confirming a successful MongoDB connection.
 
-![MongoDB Connected](screenshots/mongodb.png)
+![MongoDB Connected](screenshots/connect.png)
 
 ## API Endpoints
 
