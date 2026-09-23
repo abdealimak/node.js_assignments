@@ -1,0 +1,17 @@
+{
+  "name": "assignment9",
+  "version": "1.0.0",
+  "description": "An Express.js application that connects to MongoDB using Mongoose and performs update and delete operations on existing user data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2"
+  }
+}
