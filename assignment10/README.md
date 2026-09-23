@@ -79,7 +79,7 @@ The application successfully connects to the Firebase project.
 
 ### Screenshot – Firebase Connection
 
-![Firebase Connected](screenshots/connected.png)
+![Firebase Connected](screenshots/connect.png)
 
 ---
 
