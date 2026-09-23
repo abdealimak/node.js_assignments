@@ -235,7 +235,7 @@ Terminal output showing that the application successfully connected to MongoDB.
 
 Thunder Client showing the POST request used to create a new user and the successful response received from the server.
 
-![POST Request](post.png)
+![POST Request](screenshots/post.png)
 
 ---
 
