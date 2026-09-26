@@ -117,7 +117,7 @@ Server running on port 3000
 MongoDB Atlas connected successfully
 ```
 
-![Node.js Server Running](screenshots/node_server.png)
+![Node.js Server Running](screenshots/node-server.png)
 
 ---
 
